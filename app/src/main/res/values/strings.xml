@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Processing Demo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open the drawer</string>
+    <string name="close_drawer">Close the drawer</string>
+
+    <string-array name="sketches_array">
+        <item>Directional</item>
+        <item>Empty</item>
+    </string-array>
+</resources>
