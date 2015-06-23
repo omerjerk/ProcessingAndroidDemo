@@ -9,7 +9,8 @@ public class Directional extends PApplet {
 
     @Override
     public void setup() {
-        fullScreen(P3D);
+//        fullScreen(P3D);
+        size(1000, 1000, P3D);
         noStroke();
         fill(204);
     }
