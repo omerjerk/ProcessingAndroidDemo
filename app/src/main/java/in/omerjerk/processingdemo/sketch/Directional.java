@@ -1,5 +1,8 @@
 package in.omerjerk.processingdemo.sketch;
 
+import android.app.Activity;
+
+import in.omerjerk.processingdemo.MainActivity;
 import processing.core.PApplet;
 
 /**
@@ -10,7 +13,6 @@ public class Directional extends PApplet {
     @Override
     public void setup() {
 //        fullScreen(P3D);
-        size(1000, 1000, P3D);
         noStroke();
         fill(204);
     }
@@ -26,5 +28,16 @@ public class Directional extends PApplet {
         sphere(80);
         translate(200, 0, 0);
         sphere(80);
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        ((MainActivity) activity).onSectionAttached(0);
+    }
+
+    @Override
+    public void settings() {
+        size(1000, 1000, P3D);
     }
 }
