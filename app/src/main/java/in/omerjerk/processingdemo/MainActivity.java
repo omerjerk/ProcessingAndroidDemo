@@ -1,17 +1,14 @@
 package in.omerjerk.processingdemo;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
 
 import in.omerjerk.processingdemo.sketch.Directional;
+import in.omerjerk.processingdemo.sketch.Reflection;
 import processing.core.PApplet;
 
 public class MainActivity extends AppCompatActivity
@@ -52,6 +49,9 @@ public class MainActivity extends AppCompatActivity
                 fragment = new Directional();
                 break;
             case 1:
+                fragment = new Reflection();
+                break;
+            case 2:
                 fragment = new PApplet();
                 break;
             default:
