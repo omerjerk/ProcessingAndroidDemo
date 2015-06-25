@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import in.omerjerk.processingdemo.sketch.Directional;
+import in.omerjerk.processingdemo.sketch.Particles;
 import in.omerjerk.processingdemo.sketch.Reflection;
 import processing.core.PApplet;
 
@@ -83,6 +84,9 @@ public class MainActivity extends AppCompatActivity
                 fragment = new Reflection();
                 break;
             case 2:
+                fragment = new Particles();
+                break;
+            case 3:
                 fragment = new PApplet();
                 break;
             default:
